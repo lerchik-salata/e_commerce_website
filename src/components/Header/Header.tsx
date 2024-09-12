@@ -1,11 +1,14 @@
 import logo from '../../assets/img/logo.svg';
 import search from '../../assets/img/search.svg';
 import cart from '../../assets/img/cart.svg';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header className="flex justify-between items-center py-8">
-          <img src={logo} alt="Logo" />
+            <NavLink to="/">
+                <img src={logo} alt="Logo" />
+            </NavLink>
             <nav>
                 <ul className="flex items-center gap-8">
                 <li>
