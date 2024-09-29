@@ -1,14 +1,14 @@
 import logo from '../../assets/img/logo.svg';
 import search from '../../assets/img/search.svg';
 import cart from '../../assets/img/cart.svg';
-import { NavLink } from 'react-router-dom';
 
-const Header = () => {
+export const Header = () => {
     return (
-        <header className="flex justify-between items-center py-8">
-            <NavLink to="/">
+        <header className="py-8 bg-pink-300">
+            <div className='mx-auto max-w-[1200px] flex justify-between items-center'>
+            <a href="/">
                 <img src={logo} alt="Logo" />
-            </NavLink>
+            </a>
             <nav>
                 <ul className="flex items-center gap-8">
                 <li>
@@ -30,8 +30,7 @@ const Header = () => {
                     <img src={cart} alt="Cart" />
                 </button>
              </div>
+            </div>
         </header>
     );
  };
-
-export default Header;

@@ -1,12 +1,12 @@
 import logo from '../../assets/img/logo.svg';
-import { NavLink } from 'react-router-dom';
 
-const Footer = () => {
+export const Footer = () => {
     return (
-        <footer className='flex justify-between items-start py-8'>
-           <NavLink to="/">
+        <footer className='py-8 bg-pink-300'>
+            <div className='mx-auto max-w-[1200px] flex justify-between items-start'>
+            <a href='/'>
                 <img src={logo} alt="Logo" />
-            </NavLink>
+            </a>
             <nav>
                 <ul className='flex items-start gap-20'>
                     <li>
@@ -23,8 +23,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </nav>
+            </div>
         </footer>
     );
 };
-
-export default Footer;
